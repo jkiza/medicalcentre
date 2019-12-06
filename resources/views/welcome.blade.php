@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+# @Author: izzy
+# @Date:   2019-10-21T19:47:27+01:00
+# @Last modified by:   izzy
+# @Last modified time: 2019-12-06T09:27:40+00:00
+
+
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -81,7 +88,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Medical Centre
                 </div>
 
                 <div class="links">
