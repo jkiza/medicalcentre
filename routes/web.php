@@ -1,4 +1,11 @@
 <?php
+# @Author: izzy
+# @Date:   2019-10-21T19:47:27+01:00
+# @Last modified by:   izzy
+# @Last modified time: 2019-12-06T10:45:22+00:00
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +25,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin/home', 'Admin\HomeController@index')->name('admin.home');
+Route::get('/user/home', 'User\HomeController@index')->name('user.home');

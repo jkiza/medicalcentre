@@ -2,12 +2,13 @@
 # @Author: izzy
 # @Date:   2019-11-22T10:47:25+00:00
 # @Last modified by:   izzy
-# @Last modified time: 2019-11-22T10:51:24+00:00
+# @Last modified time: 2019-12-06T10:01:37+00:00
 
 
 
 
 use Illuminate\Database\Seeder;
+use App\Role;
 
 class RolesTableSeeder extends Seeder
 {
@@ -23,10 +24,10 @@ class RolesTableSeeder extends Seeder
         $role_admin->description = 'An administrator user';
         $role_admin->save();
 
-        $role_admin = new Role();
-        $role_admin->name = 'user';
-        $role_admin->description = 'An ordinary user';
-        $role_admin->save();
+        $role_user = new Role();
+        $role_user->name = 'user';
+        $role_user->description = 'An ordinary user';
+        $role_user->save();
 
     }
 }

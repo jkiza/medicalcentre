@@ -2,7 +2,7 @@
 # @Author: izzy
 # @Date:   2019-11-22T10:30:11+00:00
 # @Last modified by:   izzy
-# @Last modified time: 2019-11-22T10:38:45+00:00
+# @Last modified time: 2019-12-06T09:56:31+00:00
 
 
 
@@ -22,8 +22,8 @@ class CreateUserRoleTable extends Migration
     {
         Schema::create('user_role', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('user_id')->unsigned();
-            $table->integer('role_id')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
+            $table->bigInteger('role_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('restrict');
